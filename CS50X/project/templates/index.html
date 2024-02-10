@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block main %}
+        <header>
+            <p>
+                This web application can identify the top 5 colors used in an image, along with their corresponding HEX and RGB values.
+                Both colors will be displayed here if they occur the same amount of times.
+            </p>
+        </header>
+        <form action = "/" method = "POST" enctype = "multipart/form-data">
+            <input type = "file" name = "file" required />
+            <br>
+            Select Color Code:
+            <input type="radio" name="color_code" value="rgb" required>RGB
+            <input type="radio" name="color_code" value="hex" required>HEX
+            <br><br>
+            <input type = "submit" value="Submit"/>
+        </form>
+        <main>
+            {% for i in range(colors_list|length) %}
+                <div class="pair">
+                    {% if code != 'hex': %}
+                        <div class="color-box" style="background-color: rgb{{ colors_list[i] }};"></div>
+                        <div class="color-box-value"> {{ i+1 }}: rgb{{ colors_list[i] }}</div>
+                    {% else: %}
+                        <div class="color-box" style="background-color: #{{ colors_list[i] }};"></div>
+                        <div class="color-box-value"> {{ i+1 }}: #{{ colors_list[i] }}</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </main>
+{% endblock %}

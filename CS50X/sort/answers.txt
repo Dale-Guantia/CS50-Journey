@@ -1,0 +1,28 @@
+sort1 uses: Bubble Sort
+
+How do you know?: I takes longer in random and reversed list but its the fastest in sorted list.
+
+sort2 uses: Merge Sort
+
+How do you know?: It is the fastest of all of the algorithms especially on random list.
+
+sort3 uses: Selection Sort
+
+How do you know?: The time gap on each list are very close which makes sense because it uses O(n^2) on all of them.
+
+
+
+//random
+Sort 1 = 0m6.708s
+Sort 2 = 0m0.429s
+Sort 3 = 0m2.351s
+
+//reversed
+Sort 1 = 0m5.047s
+Sort 2 = 0m0.436s
+Sort 3 = 0m2.515s
+
+//sorted
+Sort 1 = 0m0.514s
+Sort 2 = 0m0.567s
+Sort 3 = 0m2.343s

@@ -1,0 +1,122 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: x-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+*{
+    font-family: 'Trebuchet MS';
+}
+
+header, form, main{
+    margin: auto;
+    width: 70%;
+    padding: 1.1rem 1.2rem;
+}
+
+header > h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+
+header, p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+form{
+    color: white;
+}
+
+.history-form{
+    color: black;
+}
+
+input{
+    margin: 10px 0;
+}
+
+input[type='submit'], input[type='file']{
+    font-size: 1.2rem;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+input[type='submit']{
+    padding: 0.5rem 0.8rem;
+    border: 2px solid black;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 4px;
+}
+
+main{
+    padding: 0;
+}
+
+.pair{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.pair > .color-box{
+    width: 50%;
+    height: 40px;
+    border: 0.5px solid black;
+    text-align: center;
+    padding: 1.1%;
+    margin: 0;
+}
+
+.pair > .color-box-value{
+    width: 50%;
+    height: 40px;
+    border: 0.5px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+}
+
+.bg-container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(60deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 300% 300%;
+    animation: color 15s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}

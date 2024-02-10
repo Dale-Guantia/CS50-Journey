@@ -1,0 +1,14 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+Based on SQL file number 4, which involves finding songs with danceability, energy, and valence greater than 0.75, it's evident that the database used in this problem set predominantly listens to Latin music such as 'Dura,' 'Me Niego,' 'Criminal,' and '1, 2, 3 (feat. Jason Derulo & De La Ghetto).' Therefore, the audio aura of this user is likely to be orange or purple, indicating a passionate, rebellious, and bold taste in music.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+
+Suppose Spotify determines an audio aura by analyzing the average energy, valence, and danceability of a person’s top 100 songs from the past year. One of the more effective methods for calculating an audio aura is through SQL queries, as demonstrated in this problem set.
+
+
+
+
+Average Danceability = 0.71646
+Average Energy = 0.65906
+Average Valence = 0.484443

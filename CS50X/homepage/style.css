@@ -1,0 +1,30 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h4 {
+    font-style: normal;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.feature .card-body i{
+    font-size: 50px;
+}
+
+.card-body i img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+}

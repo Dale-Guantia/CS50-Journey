@@ -1,0 +1,14 @@
+# In project.py import and install the following:
+
+from pyfiglet import Figlet
+import time
+import sys
+
+pip install pyfiglet
+
+
+# In test_project.py import the following:
+
+from project import result, add_rice, add_water, heat_and_time
+from unittest.mock import patch
+import pytest
